@@ -28,7 +28,10 @@ header{
     position:fixed;
     z-index: 99;
     width:100%;
-    box-shadow: 0 2px 2px #3a3a3a
+    box-shadow: 0 2px 2px #3a3a3a;
+    display:flex;
+    justify-content:space-between;
+    align-items: baseline;
 }
 header a{
     text-decoration: none;
@@ -51,6 +54,27 @@ h1{
     text-transform:uppercase;
     letter-spacing: 2px;
     color: #252525;
+}
+/*Navbar styles with dropdown toggle */
+nav{
+    position: absolute ;
+    background-color: #ffffff;
+    width:100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    padding:0 1rem;
+    left:0;
+    display:none;
+    top:100%;
+}
+/*Nav toggle*/
+#nav-toggle:checked~nav{
+    display:block;
+}
+#nav-toggle{
+    display:none;
+}
+.nav-toggle-label{
+    font-size: 2rem;
 }
 /*Main content*/
 main{
