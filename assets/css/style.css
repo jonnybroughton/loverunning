@@ -145,7 +145,14 @@ margin-top: 47px;
 #cover-text > h2, #cover-text > h3{
     color:#ffffff;
 }
-
+/*Gallery page*/
+#photos img{
+    width:100%;
+    line-height:1em;
+}
+#photos{
+    line-height:0;
+}
 
 /*footer*/
 #social-networks{
